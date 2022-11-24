@@ -4,6 +4,7 @@ import conn from "./db.js"
 import pageRoute from "./routes/pageRoute.js"
 import newsRoute from "./routes/newsRoute.js"
 import userRoute from "./routes/userRoute.js"
+import teamsRoute from "./routes/teamsRoute.js"
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/', pageRoute);
 app.use('/news', newsRoute);
 app.use('/user', userRoute);
+app.use('/teams', teamsRoute);
 
 app.listen (port, ()=> {
     console.log(`running on: ${port}`);
