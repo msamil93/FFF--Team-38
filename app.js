@@ -6,6 +6,7 @@ import methodOverride from "method-override";
 import pageRoute from "./routes/pageRoute.js"
 import newsRoute from "./routes/newsRoute.js"
 import userRoute from "./routes/userRoute.js"
+import refereesRoute from "./routes/refereesRoute.js"
 import teamsRoute from "./routes/teamsRoute.js"
 import { checkUser } from "./middlewares/authMiddleware.js";
 import fileUpload from "express-fileupload";
