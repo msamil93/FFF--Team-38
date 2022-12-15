@@ -21,7 +21,7 @@ We would appreciate if you follow the steps below to report a bug:
 1.	First of all show the exact location of the bug.
 2.	Explain why you think that is a bug.
 3.	Describe the expected behaviour and explain if you have an idea how to fix that bug.
-4.	Send us an email: fansfootballfederation@gmail.com
+4.	Send us an email: fansfootballfederation.fff@gmail.com
 ### Known bugs?
 The option of deleting and updating an account seems to be problematic. Other than that there is no bug that we found currently but of course it is possible to detect all the bugs after releasing our app to users. 
 ## Developer Documentation
