@@ -3,6 +3,13 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import News from "../models/newsModel.js";
 
+
+/** @function create User
+*  This function create a user with request
+*  @param {*} req Request object of user
+*  @param {*} res Response to send a boolean according to check if user is equal or not to user._id
+*  @returns errors if it is not
+*/
 const createUser = async (req,res) => {
     
     try {
@@ -27,6 +34,13 @@ const createUser = async (req,res) => {
         res.status(400).json(errors);
     }
 };
+
+/** @function login User
+*  This function logged in a user with request
+*  @param {*} req Request object of user with username and password
+*  @param {*} res Response to send a boolean according to check if there is a user or not and redirect dashboard page
+*  @returns error if there is, else return user
+*/
 
 const loginUser = async (req,res) => {
     
