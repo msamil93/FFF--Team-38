@@ -15,21 +15,9 @@
                               <li><a class="<%= link === 'index' && 'active' %>" href="/">Home</a></li>
                               <li><a class="<%= link === 'about' && 'active' %>" href="/about">About</a></li>
                               <li><a class="<%= link === 'news' && 'active' %>"  href="/news">News</a></li>
-                              <li><a class="<%= link === 'contact' && 'active' %>"  href="/contact">Contact</a></li>
                               <li><a href="/teams">Teams</a></li>
-                              
-
-                              <% if(user) { %>
-                                 <li><a class="<%= link === 'users' && 'active' %>"  href="/user">Users</a></li>
-                                 <li><a class="<%= link === 'dashboard' && 'active' %>"  href="/user/dashboard">Dashboard</a></li>
-                                 <li><a href="/logout">Logout</a></li>
-
-                              <% } else { %>
-                                 <li><a class="<%= link === 'login' && 'active' %>"  href="/login">Login</a></li>
-                                 <li><a class="<%= link === 'register' && 'active' %>"  href="/register">Register</a></li>
-
-                              <% } %>
-
+                              <li><a href="/contact">Contact</a></li>
+                              <li><a class="<%= link === 'register' && 'active' %>"  href="/register">Register</a></li>
                            </ul>
                            <button class="nav-toggler">
                            <span></span>
@@ -37,7 +25,12 @@
                         </nav>
                      </div>
                   </div>
-
+                  <div class=" col-md-2 di_none">
+                    <ul class="email text_align_right"><li><a href="Javascript:void(0)">Login</a></li>
+                    <li><a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+               </div>
             </div>
          </header>
          <!-- end header inner -->

@@ -16,7 +16,7 @@
               <div class="col-md-5">
                 <div class="creative">
                   <h1> <small><small>Fans Football Fedaration</small></small></h1>
-                  <a class="read_more" href="/contact">Contact Us</a>
+                  <a class="read_more" href="contact.html">Contact Us</a>
                 </div>
               </div>
               <div class="col-md-7">
@@ -101,25 +101,21 @@
             </div>
             <div class="tz-gallery">
                      <div class="row">
-
-
-                        <% for (news of news) { %>
                         <div class="col-lg-4 col-md-6 ma_bottom30">
                            <div class="lightbox">
-                              <img src="<%= news.url %>" alt="<%= news.name %>">
+                              <img src="images/g1.jpg" alt="Bridge">
                               <div class="view_main">
                                 <div class="pose">
-                                <a class="read_more" href="<%= news.url %>"><img src="images/ga.png" alt="#"/></a>
-                                <p><%= news.description %></p>
+                                <a class="read_more" href="images/g1.jpg"><img src="images/ga.png" alt="#"/></a>
+                                <p>All the current news about Quatar World Cup<br> Argentina lose to Saudi Arabia 1-2 </p>
                               </div>
                               </div>
                            </div>
                         </div>
-                        <% } %>
                         
                   </div>
                   <div class="col-md-12">
-
+                    <a class="plus_btn" href="gallery.html">+</a>
                   </div>
                </div>
             </div>
@@ -243,7 +239,40 @@
         </div>
       </div>
       <!-- end customers  -->
-      
+      <!-- contact -->
+        <div class="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="titlepage text_align_center">
+                  <span>05</span>
+                  <h2>Requste A Call Back</h2>
+                </div>
+              </div>
+              <div class="col-md-8 offset-md-2">
+                <form id="request" class="main_form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <input class="form_control" placeholder="Your name" type="type" name=" Name"> 
+                    </div>
+                    <div class="col-md-12">
+                      <input class="form_control" placeholder="Phone Number" type="type" name="Phone Number">                          
+                    </div>
+                    <div class="col-md-12">
+                      <input class="form_cont" placeholder="Message" type="type" name="message">
+                    </div>
+                    <div class="col-md-12">
+                      <div class="group_form">
+                        <button class="send_btn">Send</button>
+                        <button class="send_btn">Location</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       <!-- end contact -->
       <%- include("partials/_footer") %>
       <!-- end footer -->
