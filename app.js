@@ -45,6 +45,7 @@ app.use('/', pageRoute);
 app.use('/news', newsRoute);
 app.use('/user', userRoute);
 app.use('/teams', teamsRoute);
+app.use('/referees', refereesRoute);
 
 app.listen (port, ()=> {
     console.log(`running on: ${port}`);
