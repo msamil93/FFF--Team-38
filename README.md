@@ -1,5 +1,5 @@
 # Fans Football Federation (FFF)
-You can reach the web APP via this link =>  
+You can reach the web APP via this link =>  https://fans-football-federation-fff.herokuapp.com/
 ## Description of the project
 - What is FFF?
 FFF is a web-app where users can upload their own news about football, follow other users and evaluate referees after every match.
@@ -14,7 +14,7 @@ FFF is an user friendly and eye-pleasing alternative to the current web-site of 
 To install the software users can clone our repository to a local directory by opening a terminal and copying this command:  
 $ git clone https://github.com/SU-CS308-22FA/TEAM-38.git
 ### How to run the software?
-Users can click ….. to run the software.
+Users can click https://fans-football-federation-fff.herokuapp.com/ to run the software.
 Users can also start the software at their  http://localhost:3000
 ### How to report a bug?
 We would appreciate if you follow the steps below to report a bug:
