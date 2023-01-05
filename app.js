@@ -7,7 +7,8 @@ import pageRoute from "./routes/pageRoute.js"
 import newsRoute from "./routes/newsRoute.js"
 import userRoute from "./routes/userRoute.js"
 import teamsRoute from "./routes/teamsRoute.js"
-import refereesRoute from "./routes/refereesRoute.js"
+import playersRoute from "./routes/playersRoute.js"
+
 
 import { checkUser } from "./middlewares/authMiddleware.js";
 import fileUpload from "express-fileupload";
@@ -45,9 +46,10 @@ app.use(methodOverride("_method", {
 app.use("*", checkUser);
 app.use('/', pageRoute);
 app.use('/news', newsRoute);
+app.use('/players', playersRoute);
 app.use('/user', userRoute);
 app.use('/teams', teamsRoute);
-app.use('/referees',refereesRoute);
+
 
 app.listen (port, ()=> {
     console.log(`running on: ${port}`);

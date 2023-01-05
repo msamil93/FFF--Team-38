@@ -86,6 +86,30 @@
                                </div>
        
                            <% } %>
+                           <div class="titlepage text_align_center">
+
+                              <h2>Players which were added by this user</h2>
+                           </div>
+                           <% for (players of players) { %>
+       
+                              <div class="col-lg-4 col-md-6 ma_bottom30">
+                                 <div class="lightbox">
+                                    <img src="<%= players.url%>" alt="<%= players.name%>">
+                                    <div class="view_main">
+                                      <div class="pose">
+                                      <a class="read_more" href="/players/<%= players._id%>"><img src="/images/ga.png" alt="#"/></a>
+                                      <h3 style = "padding-top:10px; padding-buttom:10px">
+                                       <%= players.name %>
+                                    </h3>
+                                    <p style="padding-top:10px">
+                                       <%= players.description %>
+                                    </p>
+                                    </div>
+                                    </div>
+                                 </div>
+                              </div>
+      
+                          <% } %>
        
                          </div>
 
