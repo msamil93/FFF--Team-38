@@ -188,7 +188,7 @@ const sendMail = async (req,res) => {
             secure: true, // true for 465, false for other ports
             auth: {
               user: "fansfootballfederation.fff@gmail.com", // generated ethereal user
-              pass: "jdvbbtyqfdtywxmy", // generated ethereal password
+              pass: "jrptjqpmusbhethw", // generated ethereal password
             },
           });
         
