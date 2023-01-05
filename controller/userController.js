@@ -2,6 +2,7 @@ import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import News from "../models/newsModel.js";
+import Players from "../models/playersModel.js";
 
 
 /** @function create User
@@ -96,6 +97,7 @@ const createToken = (userId) => {
 
 const getDashboardPage = async (req,res) => {
     const news= await News.find({user: res.locals.user._id});
+    const players= await Players.find({user: res.locals.user._id});
     const user= await User.findById({_id: res.locals.user._id}).populate([
         "followings", 
         "followers",
@@ -103,6 +105,7 @@ const getDashboardPage = async (req,res) => {
     res.render("dashboard", {
         link: "dashboard",
         news,
+        players,
         user,
     })
 }
@@ -134,9 +137,11 @@ const getAUser = async (req,res) => {
         });
 
         const news = await News.find ({user: user._id});
+        const players = await Players.find ({user: user._id});
         res.status(200).render("user",  {
             user,
             news,
+            players,
             link: "user",
             inFollowers,
         })
@@ -208,9 +213,6 @@ const unfollow = async (req,res) => {
         });
     }
 };
-
-
-
 
 
 export {createUser, loginUser, getDashboardPage, getAllUsers, getAUser, follow, unfollow};
